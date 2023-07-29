@@ -12,7 +12,7 @@ $article = R::findOne('news', 'id = ?', array($_GET['id']));
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><? echo $article->title; ?></title>
-    <link type="Image/x-icon" href="/img/icon.ico" rel="icon">
+    <link type="Image/x-icon" href="<?$_SERVER['DOCUMENT_ROOT']?>/img/icon.ico" rel="icon">
     <link rel="stylesheet" href="<?$_SERVER['DOCUMENT_ROOT']?>/css/general.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
