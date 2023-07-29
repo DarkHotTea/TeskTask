@@ -75,7 +75,6 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------*/
 
 /* ---- Fonts ---- */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 
 /* --------------- */
 
@@ -118,7 +117,7 @@ body, html {
   font-family: Segoe UI;
 }
 .header__body .header__logo img {
-  margin-right: 24px;
+  padding-right: 24px;
   height: 66px;
   float: left;
 }
