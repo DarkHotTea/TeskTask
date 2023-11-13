@@ -1,0 +1,219 @@
+@import "nullstyle";
+
+/* ---- Fonts ---- */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+/* --------------- */
+
+/* ---- General ---- */
+
+body, html {
+    height: 100%;
+    font-family: Open Sans;
+}
+
+/* --------------- */
+
+/* ---- Wrapper ---- */
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+/* ----------------- */
+
+/* ---- Container ---- */
+.container{
+    max-width: 1520px;
+    margin: 0 auto;
+}
+
+/* --------------- */
+
+/* ---- Header ---- */
+.header{
+    padding: 40px 0 43px 0;
+    border-bottom: 1px solid #6C6E7B;
+    &__body{
+        .header__logo{
+            font-family: Segoe UI;
+            img{
+                margin-right: 24px;
+                height: 66px;
+                float: left;
+                // width: 93px;
+            }
+            span{
+                color: #2C145E;
+                font-size: 28px;
+                font-weight: 400;
+                line-height: 132%;
+                letter-spacing: 3.5px;
+                text-transform: uppercase;
+                word-wrap: break-word;
+            }
+        }
+    }
+}
+/* ---------------- */
+
+/* ---- Main ---- */
+.main{
+    flex: 1 1 auto;    
+    &__row {
+
+    }
+}
+
+.banner {    
+    &__row{
+        z-index: 5;
+        height: 646px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;        
+    }
+    &__title{
+        color: #FFF;
+        font-size: 64px;
+        font-weight: 600;
+        line-height: 140%;
+        margin-bottom: 30px;
+    }
+    &__announce {
+        color: #FFF;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 160%; 
+    }
+}
+
+.main__banner{
+    background: linear-gradient(rgba(0, 0, 0, 0.35)), url('../img/articles/c6e252ce94fd757ae97522197c394239.jpg') 55% 45%/130% auto no-repeat;
+}
+
+.articles {
+    padding: 54px 0 83px 0;
+    &__title {
+        font-size: 64px;
+        font-weight: 600;
+        line-height: 140%;
+        margin-bottom: 59px;
+    }
+    &__row { 
+        display: flex;
+        flex-wrap: wrap;        
+        margin: -40.5px;
+    }
+}
+
+
+
+.article { 
+    flex: 0 1 50%;      
+    padding: 40.5px; 
+    color: #000;
+    &__row {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: start;
+        .article__time {
+            border-radius: 20px;    
+            padding: 6px 18px;
+            background-color: #ECF2F5;
+        }
+        .article__title {
+            font-size: 32px;
+            font-weight: 600;
+            line-height: normal;
+        }
+        .article__announce {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 160%;
+            flex: 1 1 auto;
+        }
+        .article__button {
+            padding: 16px 40px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            border-radius: 50px;
+            border: 2px solid #9B407A;
+            &-text{
+                font-size: 16px;
+                font-weight: 600;
+                line-height: normal;
+                text-transform: uppercase;
+                color: #841844;
+            }     
+        }
+    }    
+    &:hover{
+        cursor: pointer;
+        .article__title{
+            color: #841844;
+        }
+        .article__button{
+            background-color: #841844;
+            &-text{
+                color: #fff
+            }
+            &-arrow{
+                path{
+                    fill: #fff;
+                }                
+            }
+        }
+    }
+}
+
+.buttons {
+    margin-top: 83px;    
+    &__row {
+        justify-content: end;
+        display: flex;
+        gap: 16px;
+    }
+}
+.buttons__button {
+    padding: 13px 22px 11px 22px;
+    border-radius: 50px;
+    border: 2px solid #841844;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #841844;
+    &-left {
+        transform: rotateY(180deg);
+    }
+    &-left, &-right {
+        padding: 14px 39px 10px 40px;
+    }
+    &:hover {
+        background-color: #841844;
+        color: #fff;
+        path{
+            fill: #fff;
+        }
+    }
+}
+
+/* ---------------- */
+
+/* ---- Footer ---- */
+.footer {
+    &__row{
+        border-top: 1px solid #6C6E7B;
+        height: 180px;
+        display: flex;
+        align-items: center;
+    }
+    &__copyrights {
+
+    }
+}
+/* ---------------- */
